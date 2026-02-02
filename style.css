@@ -14,6 +14,11 @@
     box-sizing: border-box;
 }
 
+.borda {
+    border: 0px solid red;
+    min-height: 750px;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--dark-bg);
@@ -25,7 +30,7 @@ body {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
-    
+    border: 0px solid green;
 }
 
 /* Hero Section */
@@ -189,6 +194,7 @@ body {
     border-radius: 15px;
     padding: 50px 30px;
     text-align: center;
+    border: 0px solid yellow;
 }
 
 .titulo-sessao {
@@ -417,6 +423,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
+    border: 0px solid blue;
 }
 
 .card-google {
@@ -439,7 +446,7 @@ body {
 .avatar-circle {
     width: 50px;           /* Tamanho do círculo */
     height: 50px;
-    background-color: #c5a059; /* O dourado do Dr. Otávio */
+    background-color: var(--bordeaux); /* O dourado do Dr. Otávio */
     border-radius: 50%;    /* Torna a div redonda */
     display: flex;
     align-items: center;   /* Centraliza a letra verticalmente */
@@ -516,14 +523,14 @@ body {
 }
 
 
-
+/* SEÇÃO SOBRE */
 .sobre-nos {
     background: linear-gradient(to right, #000 60%, #1a150c 100%); /* Gradiente sutil para o fundo */
     padding: 100px 0;
     color: #fff;
     overflow: hidden;
 
-    background-image: url(./img/sobre-nos.png);
+    background-image: url(./img/banner-sobre-nos-desktop.png);
     background-position: center center;
     background-size: cover;
 }
@@ -564,7 +571,7 @@ body {
 }
 
 .advogado-nome span {
-    color: #c5a059;
+    color: var(--bordeaux-hover);
     font-size: 36px;
 }
 
@@ -646,7 +653,7 @@ body {
     padding: 100px 0;
     color: #fff;
 
-    background-image: url(./img/o-processo-da-sua-defesa.png);
+    background-image: url(./img/banner-advogado-processo-desktop.png);
     background-position: center center;
     background-size: cover;
 }
@@ -662,7 +669,7 @@ body {
 
 .titulo-passo {
     font-family: 'Playfair Display', serif;
-    color: #c5a059;
+    color: var(--bordeaux-hover);
     font-size: 36px;
     letter-spacing: 2px;
 }
@@ -728,7 +735,7 @@ body {
 /* Textos do Card */
 .conteudo-passo h3 {
     font-size: 15px;
-    color: #c5a059;
+    color: var(--bordeaux-hover);
     margin-bottom: 15px;
     font-weight: 600;
     letter-spacing: 0.5px;
@@ -797,7 +804,7 @@ body {
 
 .conteudo-atendimento h2 {
     font-family: 'Playfair Display', serif;
-    color: #f2d5a0;
+    color: var(--bordeaux-hover);
     font-size: 32px;
     margin: 20px 0;
 }
@@ -980,7 +987,7 @@ body {
 }
 
 .faq-subtitle {
-    color: #c5a059;
+    color: var(--bordeaux-hover);
     font-weight: bold;
     letter-spacing: 2px;
     margin-bottom: 10px;
@@ -989,7 +996,7 @@ body {
 .faq-title {
     font-family: 'Playfair Display', serif;
     font-size: 32px;
-    color: #c5a059;
+    color: var(--bordeaux-hover);
 }
 
 /* Acordeão */
@@ -1008,7 +1015,7 @@ body {
     width: 100%;
     padding: 22px;
     background-color: #f4f4f4; /* Cinza claro do modelo */
-    color: #c5a059;            /* Dourado das perguntas */
+    color: var(--bordeaux-hover);            /* Dourado das perguntas */
     border: none;
     display: flex;
     justify-content: space-between;
@@ -1070,7 +1077,7 @@ body {
 }
 
 .footer-col h4 {
-    color: #c5a059;
+    color: var(--bordeaux-hover);
     margin-bottom: 20px;
     font-size: 18px;
 }
@@ -1114,17 +1121,26 @@ body {
 .footer-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
+    gap: 20px;
     margin-bottom: 50px;
+    border: 0px solid red;
+
+    
+}
+
+.footer-column {
+    border: 0px solid greenyellow;
 }
 
 /* Estilo dos Títulos das Colunas */
 .footer-column h3 {
-    color: #c5a059; /* Dourado */
+    color: var(--bordeaux-hover); /* Dourado */
     font-family: 'Playfair Display', serif;
-    font-size: 27px;
+    font-size: 23px;
     margin-bottom: 25px;
     font-weight: 400;
+
+    
 }
 
 /* Itens e Ícones */
@@ -1137,7 +1153,7 @@ body {
 
 .footer-icon {
     font-size: 18px;
-    color: #c5a059;
+    color: var(--bordeaux-hover);
 }
 
 .footer-item p {
